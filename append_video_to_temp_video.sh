@@ -6,4 +6,4 @@ TRANSITION=$4
 TMPOUT="$VIDEO2.appended.ffv1.mkv"
 
 workshop-video-scripts/xfade_videos.sh "$VIDEO2" "$VIDEO1" "$FADEMS" "$TRANSITION" "$TMPOUT"
-mv "$TMPOUT" "$VIDEO2"
+mv -f "$TMPOUT" "$VIDEO2"
